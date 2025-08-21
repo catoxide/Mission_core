@@ -1,0 +1,75 @@
+[
+  {
+    "id": "mine_stone",
+    "title": "挖掘10个石头",
+    "target": 10,
+    "trigger": {
+      "type": "block_break",
+      "block": "minecraft:stone"
+    }
+  },
+  {
+    "id": "kill_zombies",
+    "title": "杀死5个僵尸",
+    "target": 5,
+    "trigger": {
+      "type": "entity_kill",
+      "entity": "minecraft:zombie"
+    }
+  },
+  {
+    "id": "open_door",
+    "title": "开关门10次",
+    "target": 10,
+    "trigger": {
+      "type": "block_state_change",
+      "block": "minecraft:oak_door",
+      "property": "open"
+    }
+  },
+  {
+    "id": "use_diamond_on_air",
+    "title": "右键使用钻石30次",
+    "target": 30,
+    "trigger": {
+      "type": "player_interact",
+      "interaction_type": "right_click_item",
+      "hand_type": "main_hand",
+      "item": "minecraft:diamond"
+    }
+  },
+  {
+    "id": "use_bucket_on_water",
+    "title": "用水桶右键点击水5次",
+    "target": 5,
+    "trigger": {
+      "type": "player_interact",
+      "interaction_type": "right_click_block",
+      "hand_type": "main_hand",
+      "item": "minecraft:bucket",
+      "block": "minecraft:water"
+    }
+  },
+  {
+    "id": "left_click_stone",
+    "title": "左键点击石头20次",
+    "target": 20,
+    "trigger": {
+      "type": "player_interact",
+      "interaction_type": "left_click_block",
+      "hand_type": "main_hand",
+      "block": "minecraft:stone"
+    }
+  },
+  {
+    "id": "right_click_crafting_table",
+    "title": "右键点击工作台15次",
+    "target": 15,
+    "trigger": {
+      "type": "player_interact",
+      "interaction_type": "right_click_block",
+      "hand_type": "either_hand",
+      "block": "minecraft:crafting_table"
+    }
+  }
+]
